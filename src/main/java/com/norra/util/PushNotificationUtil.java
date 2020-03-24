@@ -1,0 +1,68 @@
+package com.norra.util;
+
+public class PushNotificationUtil {
+
+    public static String ACCEPTED = "accepted.vm";
+    public static String REQUEST_INVITE = "request-invite.vm";
+    public static String REJECTED = "rejected.vm";
+    public static String GUEST_CHECKED_IN_OUT = "guest-checked-in-out.vm";
+    public static String GUEST_AUTO_CHECKED_IN_OUT = "guest-auto-checked-in-out.vm";
+    public static String HOST_START_TRIP = "host-start-trip.vm";
+    public static String HOST_END_TRIP = "host-end-trip.vm";
+    public static String HOST_AUTO_END_TRIP = "host-auto-end-trip.vm";
+    public static String HOST_GUEST_CANCEL = "host-guest-cancel.vm";
+    public static String RIDE_START_REMINDER = "ride-start-reminder.vm";
+    public static String RIDE_START_NUDGE = "ride-start-nudge.vm";
+    public static String AUTO_CANCEL_NUDGE = "auto-cancel-nudge.vm";
+    public static String RIDE_CHECK_IN_REMINDER = "ride-check-in-reminder.vm";
+    public static String RECURRING_NUDGE = "recurring-nudge.vm";
+    public static String CHECK_IN_NUDGE = "check-in-nudge.vm";
+    public static String CLEAR_DUES_NUDGE = "clear-dues.vm";
+    public static String RIDE_AUTO_EXPIRE = "ride-auto-expire.vm";
+    public static String CLEAR_DUES_TITLE = "clear dues";
+    public static final String NEW_RIDE_REQUEST = "New Request!!";
+    public static final String NEW_RIDE_INVITE = "New Invite!!";
+    public static final String REMINDER_TO_START_TRIP = "Reminder to start trip";
+    public static final String START_TRIP_NUDGE = "Start trip nudge";
+    public static final String AUTO_CANCEL_NUDGE_TITLE = "Auto cancel nudge";
+    public static final String REMINDER_TO_CHECK_IN = "Reminder to check in to ride";
+    public static final String RECURRING_RIDE_NUDGE = "Recurring ride nudge";
+    public static final String TODAY = "today";
+    public static final String TOMORROW = "tomorrow";
+    public static final String GUEST_CANCELLED_TRIP = "Guest cancelled trip";
+    public static final String HOST_CANCELLED_TRIP = "Host cancelled trip";
+    public static final String RIDE_CANCELLED = "Ride cancelled!";
+    public static final String CANCELLED = "CANCELLED";
+    public static final String CHECKIN = "check-in";
+    public static final String CHECKED_INTO = "checked into";
+    public static final String AUTO_CHECKED_INTO = "auto checked into";
+    public static final String GUEST_CHECKED_IN = "Checked In!!";
+    public static final String AUTO_CHECKED_IN = "You are Auto Checked In!!";
+    public static final String GUEST_CHECKED_OUT = "Checked Out!!";
+    public static final String CHECKOUT = "check-out";
+    public static final String CHECKED_OUT = "checked out of";
+    public static final String START_TRIP = "start";
+    public static final String HOST_HAS_STARTED = "Host has started!";
+    public static final String TRIP_HAS_ENDED = "Ride has ended!";
+    public static final String TRIP_HAS_AUTO_ENDED = "Ride has auto ended!";
+    public static final String TRIP_SCREEN = "TripScreen";
+    public static final String REQUESTED = "REQUESTED";
+    public static final String INVITED = "INVITED";
+    public static final String TYPE_REJECTED = "REJECTED";
+    public static final String TYPE_ACCEPTED = "ACCEPTED";
+    public static final String AUTO_EXPIRED = "AUTO_EXPIRED";
+    public static final String RIDE_INVITE_ACCEPTED = "Invite Accepted!!";
+    public static final String INVITE = "invite";
+    public static final String RIDE_REQUEST_ACCEPTED = "Request Accepted!!";
+    public static final String REQUEST = "request";
+    public static final String INVITE_REQUEST = "InviteRequest";
+    public static final String SCHEDULED = "SCHEDULED";
+    public static final String AUTO_CANCELLED = "AUTO_CANCELLED";
+    public static final String TYPE_RECURRING_RIDE_NUDGE = "RECURRING_RIDE_NUDGE";
+    public static final String RECURRING_RIDE = "RecurringRide";
+    public static final String RIDE_EXPIRED = "Ride Expired!!";
+    public static final String BANK_DETAIL_SCREEN = "BANK_DETAIL_SCREEN";
+    public static String BANK_DETAIL_NUDGE = "bank-detail-nudge.vm";
+    public static final String BANK_DETAIL_TITLE = "Update Bank details";
+
+}

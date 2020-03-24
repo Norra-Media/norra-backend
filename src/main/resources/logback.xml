@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property name="FILE_PATH" value="./logs/pool.log"/>
+    <property name="PATTERN"
+              value="%white(%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ}) %highlight(%-5level) %blue(%X{x-trace-id}) %blue(%X{X-B3-TraceId}) %blue(%X{X-B3-SpanId}) [%green(%t)] %yellow(%logger{20})::%magenta(%L): - %msg%n"/>
+
+    <property name="ROLLING_FILE_PATH" value="./logs/archived/pool.%d{yyyy-MM-dd}.%i.log"/>
+
+    <appender name="FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${FILE_PATH}</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <charset>UTF-8</charset>
+            <Pattern>%d %p %X{x-trace-id} %X{X-B3-TraceId} %X{X-B3-SpanId} [%t] %logger{20}::%L: %m%n</Pattern>
+        </encoder>
+
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>trace</level>
+        </filter>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${ROLLING_FILE_PATH}</fileNamePattern>
+            <maxHistory>10</maxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>50MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <withJansi>true</withJansi>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <charset>UTF-8</charset>
+            <Pattern>
+                ${PATTERN}
+            </Pattern>
+        </encoder>
+    </appender>
+
+
+    <root level="INFO">
+        <!-- TODO: Look into Async appenders for efficiency. -->
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <!-- LOG at TRACE level -->
+    <logger name="bounce.pool" level="trace" additivity="false">
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <logger name="com.zaxxer.hikari" level="INFO" additivity="false">
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+</configuration>

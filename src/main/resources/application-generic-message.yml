@@ -1,0 +1,78 @@
+# All messages shown to the user are saved here
+
+# Vehicle API related messages
+  VEHICLE_NOT_FOUND: Vehicle not found
+  VEHICLE_DELETE_SUCCESS: Vehicle deleted successfully
+  VEHICLE_UPDATED_SUCCESSFULLY: Vehicle updated successfully
+  INVALID_REG_NO: Invalid registration number
+  REG_NO_REGEX : ^[A-Z]{2}[0-9]{1,2}([A-Z]){1,2}([A-Z]*)?[0-9]{1,4}$
+  REG_NO_NOT_EDITABLE: Registration number cannot be edited
+  FUEL_TYPE : Diesel,Petrol,CNG
+  FUEL_DATA_NOT_FOUND : Sorry, fuel data not found. Please try later
+  VEHICLE_CSV_FILE_PATH : https://assets.bounce.bike/pool-assets-stage/2019+Nov+-+List+of+vehicle+details.xlsx
+
+# Tagged user address api constants
+  DATA_ADDED_SUCCESSFULLY : \ added successfully
+  DATA_DELETED : Data deleted successfully
+  UPDATED_SUCCESSFULLY : \ updated successfully
+
+  
+  
+ # Ride related api contants
+  UNABLE_TO_FIND_RIDES : Unable to find rides at this time
+  ALREADY_HAVE_SCHEDULED_RIDE : Uh oh, you’re already confirmed for another ride at the same time!
+  SOURCE_DESTINATION_CAN_NOT_BE_SAME : Source and destination cannot be same
+  MINIMUM_POOLING_DISTANCE_MSG : Can't create ride for such shorter distance
+  SOURCE_DESTINATION_MANDATORY : Source and destination are mandatory
+  OFFERED_SEATS_SHOULD_GREATER_THAN_ZERO : Offered seats should be more than zero(0)
+  REQUIRED_SEATS_SHOULD_GREATER_THAN_ZERO : Required seats should be more than zero(0)
+  NO_SUCH_RIDE_IN_SCHEDULED_STATE : No such ride available in scheduled state
+  NO_SUCH_TRIP_STARTED : No such trip started
+  RIDE_CAN_ONLY_BE_STARTED_BY_HOST : Ride can only be started by host
+  RIDE_CAN_ONLY_BE_END_BY_HOST : Ride can only be end by host
+  UNABLE_TO_CANCEL_RIDE : Unable to cancel ride at this time.
+  GUEST_NO_MORE_AVAILABLE_TO_TAKE_RIDE : This guest is not available to take ride.
+  GUEST_REQUIRED_MORE_SEATS_THAN_AVAILABLE : This guest requires more seats than available number of seats.
+  HOST_NO_MORE_AVAILABLE_TO_OFFER_RIDE : This host is no more available to offer ride.
+  SEATS_ARE_LESS_THAN_REQUIRED : Available seats with host is lesser in than required seats.
+  RIDE_UPDATION_FAILED : Ride can not be updated at this time.
+  START_DATE_MANDATORY_FOR_RECURRING_RIDE : Start date is mandatory for recurring ride.
+  END_DATE_MANDATORY_FOR_RECURRING_RIDE : End date is mandatory for recurring ride.
+  LIST_DAYS_MANDATORY_FOR_RECURRING_RIDE : List of days are mandatory for recurring ride.
+  RIDE_LIMIT_CROSSED : Sorry, Can't do more rides for the day.
+  AREA_NOT_SERVICEABLE : Source or destination is not serviceable currently.
+  INTERCITY_NOT_SERVICEABLE : Oops, this location is currently not operational on Bounce Hitch.
+  BOOK_RIDE_IN_YOUR_CITY : You can book rides only in your city.
+  UNABLE_TO_CREATE_RIDE : Unable to create ride.
+  SCHEDULED_RIDE_TIME_OFFSET_DAYS_MSG_BODY1 : Schedule ride time can not be more than
+  SCHEDULED_RIDE_TIME_OFFSET_DAYS_MSG_BODY2 : days from current time.
+  SCHEDULED_RIDE_TIME_OFFSET_MINS_MSG_BODY1: Scheduled ride time can only be
+  SCHEDULED_RIDE_TIME_OFFSET_MINS_MSG_BODY2 : mins. after of current time.
+  SCHEDULED_RIDE_TIME_OFFSET_MSG_BODY3 : Past time rides can not be scheduled.
+  END_DATE_OFFSET_FOR_RECURRING_RIDES_MSG_BODY1: Date range for recurring ride can not be more than
+  END_DATE_OFFSET_FOR_RECURRING_RIDES_MSG_BODY2: days from current time.
+  RECURRING_RIDE_NO_OF_DAYS : Date range for recurring ride is invalid.
+  FEEDBACK_ALREADY_GIVEN : Feedback is already given for your last trip.
+  COMPLETED_TRIP_NOT_FOUND : Completed trips not Found.
+  TRIP_DETAILS_NOT_CANCELED : Unable to Cancel the Trip at this time.
+  TRIP_STARTED_SUCCESS : Trip started successfully.
+  TRIP_ENDED_SUCCESS : Trip ended successfully.
+  CAN_NOT_CANCEL_CHECKED_IN_GUEST : Oops, you can't cancel a trip with already checked-in guest.
+  HOST_HAS_NOT_STARTED_TRIP : Host has not started the trip yet.
+  TRIP_CAN_NOT_BE_CANCELLED : Trip can not be cancelled at this time.
+  RIDE_CAN_NOT_BE_UPDATED : Ride can not be updated at this time.
+  UNABLE_TO_VALIDATE_RIDE_REQUEST : Unable to validation ride create request.
+  CAN_NOT_OFFER_MORE_SEATS : You can not offer more then configured seats for this vehicle.
+  ERROR_IN_PROCESSING_PAYMENT : Error in processing payment.
+  RIDE_FLOW_DEEP_LINK : <Recurring ride deep link>
+  CAN_NOT_CREATE_RIDES_BEOFRE_CLEAR_DUES : Please clear dues before creating more rides
+  NOT_AUTHORISED_TO_CREATE_RIDE : You are not a authorized user to create ride
+  TRIP_EXPIRED : You missed your last ride. Start a new one!
+  CANCEL_NOT_ALLOWED : Trip you are trying to cancel is already cancelled
+  INVALID_REQUEST_INVITE : The requested ride has been modified. Please refresh.
+  CONSTRAINT_VIOLATION_MSG : Data has been updated. Refreshing content
+
+  CALL_DISABLED_NOT_ACCEPTED : Once accepted, call one hour prior to start time
+  CALL_DISABLED_NOT_ACTIVE_TRIP : Calls are supported only 1 hour before the ride starts.
+
+ 
