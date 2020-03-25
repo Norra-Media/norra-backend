@@ -27,8 +27,6 @@ after starting the project from any editor or after deploying on server, api doc
 
 **Context Path**/swagger-ui.html
 
-**Staging URL**
-(http://pool-app-stg.bounce.bike/swagger-ui.html)
 
 
 
