@@ -18,11 +18,12 @@ public class UserSummary extends GenericEntity{
     @Column(unique = true)
     private Long userId;
 
-
     private int questionsAsked;
     
     private int noOfAnswers;
     
     private int noOfPosts;
 
+    private int noOfComments;
+    
 }
