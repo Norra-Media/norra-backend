@@ -28,5 +28,6 @@ public class User extends GenericEntity {
     private String profilePic;
     private String signupType;
     private String fcmToken;
+    private String loginState;
 
 }
