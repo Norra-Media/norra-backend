@@ -39,13 +39,12 @@ public abstract class GenericEntity implements Serializable {
 	@Column(name = "id")
     private Long id;
 
-    @Column(name = "created_on", nullable = false, updatable = false, columnDefinition = "TIMESTAMP WITH TIME ZONE")
-    @CreationTimestamp
-    private ZonedDateTime createdOn;
+    @Column(name = "created_on", nullable = false, updatable = false)
+    private Long createdOn;
 
-    @Column(name = "updated_on", nullable = false, columnDefinition = "TIMESTAMP WITH TIME ZONE")
+    @Column(name = "updated_on", nullable = false)
     @UpdateTimestamp
-    private ZonedDateTime updatedOn;
+    private Long updatedOn;
 
 
 }

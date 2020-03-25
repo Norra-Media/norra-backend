@@ -18,7 +18,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/user/")
+@RequestMapping("/api/user-summary")
 public class UserSummaryController {
 
 	private UserSummaryService userSummaryService;
@@ -35,7 +35,7 @@ public class UserSummaryController {
 	 * @param userId object of type Long
 	 * @return returns weekly interest and number of ride taken/offered
 	 */
-	@GetMapping(value = "user-summary")
+	@GetMapping
 	public ResponseEntity<ResponseModel> getUserSummary(@RequestParam Long userId) {
 		try {
 			return new ResponseEntity<ResponseModel>(userSummaryService.getUserSummary(userId),
@@ -52,7 +52,7 @@ public class UserSummaryController {
 	 * 
 	 * @return returns user response entity
 	 */
-	@PostMapping(value = "/user-summary")
+	@PostMapping
 	public void userSummary(@RequestBody User user) {
 		userSummaryService.userSummary(user);
 	}
