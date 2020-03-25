@@ -29,5 +29,6 @@ public class User extends GenericEntity {
     private String signupType;
     private String fcmToken;
     private String loginState;
+    private String otp;
 
 }
