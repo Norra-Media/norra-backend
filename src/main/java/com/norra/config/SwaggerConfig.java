@@ -40,7 +40,7 @@ public class SwaggerConfig {
                 .produces(consumesAndProduces)
                 .pathMapping("/")
                 .securityContexts(Lists.newArrayList(securityContext()))
-                .securitySchemes(Lists.newArrayList(apiKey()))
+                //.securitySchemes(Lists.newArrayList(apiKey()))
                 .select().apis(RequestHandlerSelectors.withClassAnnotation(RestController.class)).build();
     }
 
@@ -54,9 +54,9 @@ public class SwaggerConfig {
                 .build();
     }
 
-    private ApiKey apiKey() {
-        return new ApiKey(SwaggerConstants.AUTH_TYPE, authHeaderName, SwaggerConstants.HEADER);
-    }
+//    private ApiKey apiKey() {
+//        return new ApiKey(SwaggerConstants.AUTH_TYPE, authHeaderName, SwaggerConstants.HEADER);
+//    }
 
     private SecurityContext securityContext() {
         return SecurityContext.builder()

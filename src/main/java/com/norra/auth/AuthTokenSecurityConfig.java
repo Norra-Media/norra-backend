@@ -59,21 +59,21 @@ public class AuthTokenSecurityConfig extends WebSecurityConfigurerAdapter {
             }
         });
 
-        httpSecurity.
-                antMatcher(Constants.ANT_MATCHER_URL)
+        httpSecurity
+                //antMatcher(Constants.ANT_MATCHER_URL)
                 .csrf()
-                .disable()
-                .sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                .and()
-                .addFilter(filter)
-                .addFilterBefore(new ExceptionTranslationFilter(
-                                new Http403ForbiddenEntryPoint()),
-                        filter.getClass()
-                )
-                .authorizeRequests()
-                .anyRequest()
-                .authenticated();
+                .disable();
+                //.sessionManagement()
+                //.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                //.and()
+                //.addFilter(filter)
+                //.addFilterBefore(new ExceptionTranslationFilter(
+                  //              new Http403ForbiddenEntryPoint()),
+                    //    filter.getClass()
+                //)
+                //.authorizeRequests()
+                //.anyRequest()
+                //.authenticated();
     }
 
 }

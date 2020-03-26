@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "user")
+@Table(name = "app_user")
 public class User extends GenericEntity {
 
     private static final long serialVersionUID = 1L;
@@ -25,10 +25,12 @@ public class User extends GenericEntity {
     private String shortBio;
     private Date dateOfBirth;
     private String userState;
-    private String profilePic;
-    private String signupType;
+    private String profileImage;
+    private String source;
     private String fcmToken;
     private String loginState;
+    private String googleToken;
+    private String fbToken;
     private String otp;
 
 }

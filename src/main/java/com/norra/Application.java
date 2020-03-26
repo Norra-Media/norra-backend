@@ -50,7 +50,8 @@ public class Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		log.info("Setting up sentry");
-		Sentry.init(dsn);
+		// TODO Auto-generated method stub
+		
 	}
+
 }

@@ -247,9 +247,9 @@
 				<version>0.8.2</version>
 				<configuration>
 					<excludes>
-						<exclude>**/bounce/pool/model/*</exclude>
-						<exclude>**/bounce/pool/entities/*</exclude>
-						<exclude>**/bounce/pool/enums/*</exclude>
+						<exclude>**/com/norra/model/*</exclude>
+						<exclude>**/com/norra/entities/*</exclude>
+						<exclude>**/com/norra/enums/*</exclude>
 					</excludes>
 				</configuration>
 				<executions>

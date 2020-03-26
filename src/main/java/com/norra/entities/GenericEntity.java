@@ -43,7 +43,6 @@ public abstract class GenericEntity implements Serializable {
     private Long createdOn;
 
     @Column(name = "updated_on", nullable = false)
-    @UpdateTimestamp
     private Long updatedOn;
 
 

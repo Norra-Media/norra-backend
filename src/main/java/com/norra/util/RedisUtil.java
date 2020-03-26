@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 
 import com.norra.cache.manager.UserCacheManager;
 import com.norra.model.request.User;
-import com.norra.service.AppConfigService;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -15,13 +14,11 @@ public class RedisUtil {
 
     public static final String USERS = "USERS";
 
-    private AppConfigService appConfigService;
     private UserCacheManager userCacheManager;
 
     @Autowired
-    public RedisUtil(AppConfigService appConfigService,
+    public RedisUtil(
                     UserCacheManager userCacheManager) {
-        this.appConfigService = appConfigService;
         this.userCacheManager = userCacheManager;
     }
 
@@ -52,10 +49,10 @@ public class RedisUtil {
      * @param userId the user id
      * @return the user data from redis
      */
-    public User getUserDataById(Long userId) {
-        return getUserDataFromCache(userId);
-        //return fetchUserFromBounceAPI(userId);
-    }
+	/*
+	 * public User getUserDataById(Long userId) { return
+	 * getUserDataFromCache(userId); //return fetchUserFromBounceAPI(userId); }
+	 */
 
     /**
      * Gets the user data from cache(redis) based on userid.. if not available in
@@ -64,23 +61,15 @@ public class RedisUtil {
      * @param userId - type of Long, the user id
      * @return - the user data from redis
      */
-    public User getUserDataFromCache(Long userId) {
-        User user = new User();
-        if (userId == null) {
-            return user;
-        }
-        try {
-            User cachedUser = this.userCacheManager.getCachedUserDetails(userId);
-            if (cachedUser.getId() != null) {
-                return cachedUser;
-            }
-            log.debug("User not found in cache");
-            saveUserDataInCache(user);
-        } catch (Exception e) {
-            log.error("Error occurred while trying to fetch user : ", e);
-        }
-        return user;
-    }
+	/*
+	 * public User getUserDataFromCache(Long userId) { User user = new User(); if
+	 * (userId == null) { return user; } try { User cachedUser =
+	 * this.userCacheManager.getCachedUserDetails(userId); if (cachedUser.getId() !=
+	 * null) { return cachedUser; } log.debug("User not found in cache");
+	 * saveUserDataInCache(user); } catch (Exception e) {
+	 * log.error("Error occurred while trying to fetch user : ", e); } return user;
+	 * }
+	 */
 
 
 }
